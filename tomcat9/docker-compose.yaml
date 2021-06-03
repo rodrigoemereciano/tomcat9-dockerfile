@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  tomcat9:
+    container_name: tomcat-app-teste
+    hostname: tomcat-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080/tcp
+    
